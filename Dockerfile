@@ -7,7 +7,7 @@
 # Pull base image
 FROM  openjdk:8
 
-ENV SCALA_VERSION 2.12.1
+ENV SCALA_VERSION 2.11.8
 ENV SBT_VERSION 0.13.13
 
 # Scala expects this file
