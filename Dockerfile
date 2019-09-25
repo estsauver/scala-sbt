@@ -7,8 +7,8 @@
 # Pull base image
 FROM  openjdk:8
 
-ENV SCALA_VERSION 2.12.7
-ENV SBT_VERSION 1.2.6
+ENV SCALA_VERSION 2.12.8
+ENV SBT_VERSION 1.2.8
 
 # Scala expects this file
 RUN touch /usr/lib/jvm/java-8-openjdk-amd64/release
@@ -30,7 +30,7 @@ RUN \
   rm sbt-$SBT_VERSION.deb && \
   apt-get update && \
   apt-get install sbt && \
-  sbt 'set scalaVersion := "2.11.8"' compile
+  sbt 'set scalaVersion := "2.12.8"' compile
 
 RUN apt-get install python
 
